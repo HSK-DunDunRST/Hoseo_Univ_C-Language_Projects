@@ -53,7 +53,7 @@ int main() {
     printf("가장 적게 판매된 상품: ID %d, 판매량 %d\n", minSalesIndex + 1, salesEntity[minSalesIndex]);
     // 재고부족한 상품 ID와 재고 수량 출력 (재고 수량이 2 이하일 경우)
     for (int i = 0; i < n; i++) {
-        if (stockEntity[i] < 3) {
+        if (stockEntity[i] <= 2) {
             printf("상품 ID %d : 재고부족(%d)\n", i + 1, stockEntity[i]);
         }
     }
